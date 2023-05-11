@@ -1,40 +1,40 @@
 <?php
-// DEFINICION DE LA CLASE PRODUCTO
+// definicion de clase producto
 class Producto{
-    // DEFINICION DE ATRIBUTOS
+    // definicion de atributos
     public $precio;
     public $nombre;
     public $disponible;
 
-    // DEFINICION DE METODOS
+    // definicion de metodos
 
     public function mostrarNombreProducto() : void{
-        echo $this->nombre;
+        echo $this->nombre. "<br>";
     }
 
     public function mostrarPrecioProducto() : void{
-        echo $this->precio;
+        echo $this->precio. "<br>";
     }
 
     public function mostrarDisponibleProducto() : void{
-        echo $this->disponible;
+        echo $this->disponible. "<br>";
     }
     
 }
 
-// CREACIÓN DE UN OBJETO
-// CREAR UNA INSTANCIA
+// creacion de objetos
+
 $mesa = new Producto(); 
 
 $mesa->nombre = "Mesa";
 $mesa->precio = 500;
-$mesa->disponible = true;
+$mesa->disponible = "Si";
 
 $silla = new Producto(); 
 
 $silla->nombre = "Silla grande";
-$silla->precio = 100;
-$silla->disponible = false;
+$silla->precio = 200;
+$silla->disponible = "No";
 
 
 
