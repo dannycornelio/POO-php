@@ -15,6 +15,10 @@ class Producto{
     public function mostrarPrecioProducto() : void{
         echo $this->precio;
     }
+
+    public function mostrarDisponibleProducto() : void{
+        echo $this->disponible;
+    }
     
 }
 
@@ -28,9 +32,9 @@ $mesa->disponible = true;
 
 $silla = new Producto(); 
 
-$mesa->nombre = "Silla grande";
-$mesa->precio = 100;
-$mesa->disponible = false;
+$silla->nombre = "Silla grande";
+$silla->precio = 100;
+$silla->disponible = false;
 
 
 
@@ -42,5 +46,13 @@ var_dump($silla);
 echo "</pre>";
 
 $mesa->mostrarNombreProducto();
-$silla->mostrarNombreProducto();
 $mesa->mostrarPrecioProducto();
+$mesa->mostrarDisponibleProducto();
+echo "<br>";
+$silla->mostrarNombreProducto();
+$silla->mostrarPrecioProducto();
+$silla->mostrarDisponibleProducto();
+
+
+
+?>
