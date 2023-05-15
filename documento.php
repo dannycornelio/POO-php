@@ -6,6 +6,14 @@ class Producto{
     public $nombre;
     public $disponible;
 
+// metodo constructor
+public function __construct(int $precio = 500, string $nombre = "mesa", bool $disponible = false){
+     $this-> precio = $precio;
+     $this-> nombre ;
+     $this-> disponible;
+}
+
+
     // definicion de metodos
 
     public function mostrarNombreProducto() : void{
